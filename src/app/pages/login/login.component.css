@@ -1,0 +1,84 @@
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height:100vh ;
+  background-color: rgb(245, 245, 245);
+  font-weight: 400;
+}
+img {
+  margin-top: 1rem;
+  margin-bottom: 30px;
+  width: 200px;
+}
+a {
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(7, 64, 90);
+  margin-top: 10px;
+}
+input {
+  width:200px;
+  height: 2rem;
+  border: rgb(9, 118, 168) solid 1px;
+  border-radius: 4px;
+  margin-top: 20px;
+  padding-left: 7px;
+  background-color: rgb(245, 245, 245);
+}
+::placeholder{
+  opacity:0.8 ;
+  font-weight: 300;
+  color: black;
+}
+button {
+  color: white;
+  background-color: rgb(9, 118, 168);
+  border-style: hidden;
+  width: 150px;
+  height: 2rem;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+button:hover{
+  cursor: pointer;
+}
+.firstIcon {
+  display:inline;
+  font-size: xx-large;
+  color: rgb(9, 118, 168);
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.firstIcon:hover {
+  cursor: pointer;
+}
+.send{
+  position: relative;
+  bottom:110px ;
+  width: 230px;
+  height: 3rem;
+  display: none;
+  font-size: large;
+  margin-bottom:-50px;
+}
+.send i{
+  padding-right: 10px;
+}
+#iconmin{
+  visibility: hidden;
+}
+.footer {
+  color: rgb(7, 64, 90);
+  margin-top: auto;
+  font-size: 0.8rem;
+}
+
+.hide-icon {
+  display: none;
+}

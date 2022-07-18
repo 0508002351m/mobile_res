@@ -1,0 +1,96 @@
+section{
+  position: relative;
+  background-color: rgba(211, 211, 211, 0.274);
+  min-height: 48rem;
+  flex-direction: column;
+}
+.top{
+  padding-top: 1rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: rgba(37, 37, 67, 0.618);
+}
+.middle, .middle_bottom{
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  color: rgb(17, 78, 107);
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+}
+.container div{
+  margin: 1rem 0rem 1rem 1rem;
+}
+.container_bottom div{
+  margin: 1rem 0rem 1rem 1.4rem;
+}
+.container, .container_bottom{
+  position: relative;
+}
+.container:after{
+  content: '';
+  position: absolute;
+  height: 0.01rem;
+  left: 12%;
+  width: 88%;
+  background-color: rgba(171, 171, 180, 0.138);
+  top: 3rem;
+}
+.container:nth-of-type(4):after{
+  height: 0rem;
+}
+
+button{
+  color: white;
+  background-color: rgb(9, 118, 168);
+  border-style: hidden;
+  width: 50%;
+  margin-top: 3.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 2rem;
+  border-radius: 4px;
+}
+button:hover{
+  cursor: pointer;
+}
+.send{
+  height: 3rem;
+  font-size: 1.5rem;
+}
+.send i{
+  margin-right: 0.8rem;
+}
+@media (min-width: 800px) {
+  .top{
+    width: 30%;
+  }
+}
+@media (max-width: 470px) {
+  .top{
+    width: 75%;
+  }
+  .middle, .middle_bottom{
+    width: 98%;
+    font-size: 0.8rem;
+  }
+  button{
+    width: 75%;
+  }
+
+}
+@media (max-width: 350px){
+  .send{
+    font-size: 1rem;
+  }
+  button{
+    width: 90%;
+  }
+  .top{
+    width: 100%;
+  }
+}

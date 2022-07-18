@@ -1,0 +1,31 @@
+<section>
+  <div class="content d-flex">
+    <div class="m-auto h3">Content</div>
+    <div class="search">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search ...">
+    </div>
+    <div class="head">6.4 Features</div>
+    <div class="content_box">
+    <div  *ngFor="let item of content_top" class="d-flex content_item">
+    <div><i ngClass="{{item.icon}}"></i></div>
+    <div>{{item.title}}</div>
+    </div>
+    </div>
+    <div class="head">Dashboard with different inputs type</div>
+    <div class="content_box">
+    <div  *ngFor="let item of content_mid" class="d-flex content_item">
+    <div><i class="fa-solid fa-thumbtack"></i></div>
+    <div>{{item.title}}</div>
+    </div>
+    </div>
+    <div class="head">Periodic-Invocation</div>
+    <div class="content_box">
+    <div  *ngFor="let item of content_last" class="d-flex content_item">
+    <div><i class="fa-solid fa-thumbtack"></i></div>
+    <div>{{item.title}}</div>
+    </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>

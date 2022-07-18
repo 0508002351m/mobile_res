@@ -1,0 +1,49 @@
+section{
+  background-color:  rgba(211, 211, 211, 0.274);
+  min-height: 48rem;
+  color: rgba(79, 109, 124);
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+.slashed_app{
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  font-size: 5rem;
+  position: relative;
+  color: rgba(9, 118, 168, 0.757);;
+}
+.slash{
+  color: rgba(9, 118, 168, 0.919);;
+  position: absolute;
+  bottom: 3.2rem;
+  right: 8.5rem;
+}
+.txt{
+  font-size: 2rem;
+}
+@media(max-width:480px){
+  .slashed_app{
+    font-size: 4rem;
+  }
+  .slash{
+    right: 4.9rem;
+    bottom: 2rem;
+  }
+  .txt{
+    font-size: 1.25rem;
+  }
+}
+@media(max-width:230px){
+  .slashed_app{
+    font-size: 3rem;
+  }
+  .slash{
+    right: 2.8rem;
+    bottom: 1.2rem;
+  }
+  .txt{
+    font-size: 0.8rem;
+  }
+}

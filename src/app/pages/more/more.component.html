@@ -1,0 +1,24 @@
+<section class="d-flex">
+  <div class="top">
+    <div class="cola"><img src="../../../assets/images/Coca-Cola-Logo.wine.svg"></div>
+    <div class="mt-2">
+      192.168.1.78:7335 <br> sw-admin@samplewidgets.com
+    </div>
+  </div>
+  <div class="middle d-flex">
+    <div class="d-flex container" *ngFor="let item of middle_container">
+    <div><i ngClass={{item.icon}}></i></div>
+    <div>{{item.title}}</div>
+    </div>
+  </div>
+  <div class="middle_bottom d-flex">
+    <div class="d-flex container_bottom">
+    <div><i class="fa-solid fa-door-open"></i></div>
+    <div>Log Out</div>
+    </div>
+  </div>
+  <button type="submit" class="send" id="send">
+    <i class="fa fa-paper-plane" id="iconmin"></i> Send Diagnostic
+  </button>
+</section>
+<app-footer></app-footer>
