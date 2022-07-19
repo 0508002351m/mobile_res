@@ -1,10 +1,11 @@
 section{
   background-color:  rgba(211, 211, 211, 0.274);
-  min-height: 48rem;
   color: rgba(79, 109, 124);
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
+  height: 95vh;
+  padding-bottom: 100px;
 }
 .slashed_app{
   flex-direction: column;

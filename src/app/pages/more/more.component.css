@@ -1,8 +1,8 @@
 section{
   position: relative;
   background-color: rgba(211, 211, 211, 0.274);
-  min-height: 48rem;
   flex-direction: column;
+  padding-bottom: 100px;
 }
 .top{
   padding-top: 1rem;

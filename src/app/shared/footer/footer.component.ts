@@ -7,6 +7,29 @@ import * as $ from "jquery";
 })
 export class FooterComponent implements AfterViewInit {
 
+  elements:any[]=[
+    {
+      title:"Jobs",
+      icon:"fa-solid fa-list-check",
+      router:"/jobs"
+    },
+    {
+      title:"Activity",
+      icon:"fa-solid fa-chart-simple",
+      router:"/activity"
+    },
+    {
+      title:"Content",
+      icon:"fa-solid fa-folder-closed",
+      router:"/content"
+    },
+    {
+      title:"More",
+      icon:"fa-solid fa-comment-dots",
+      router:"/more"
+    },
+
+  ]
   constructor() { }
 
   ngAfterViewInit(): void {

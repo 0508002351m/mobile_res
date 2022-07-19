@@ -1,24 +1,12 @@
 <footer class="d-flex">
   <div class="container d-flex">
-    <div class="foot_element footer_after_clicking" routerLink="/">
+    <div class="foot_element footer_after_clicking" routerLink="">
       <div><i class="fa-solid fa-grip"></i></div>
       <div>Dashboard</div>
     </div>
-    <div class="foot_element" routerLink="/jobs">
-      <div><i class="fa-solid fa-list-check"></i></div>
-      <div>Jobs</div>
-    </div>
-    <div class="foot_element">
-      <div><i class="fa-solid fa-chart-simple"></i></div>
-      <div>Activity</div>
-    </div>
-    <div class="foot_element" routerLink="/content">
-      <div><i class="fa-solid fa-folder-closed"></i></div>
-      <div>Content</div>
-    </div>
-    <div class="foot_element" routerLink="/more">
-      <div><i class="fa-solid fa-comment-dots"></i></div>
-      <div>More</div>
+    <div class="foot_element" *ngFor="let item of elements" routerLink="{{item.router}}">
+      <div><i ngClass="{{item.icon}}"></i></div>
+      <div>{{item.title}}</div>
     </div>
   </div>
 </footer>

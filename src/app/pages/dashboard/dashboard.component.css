@@ -1,27 +1,47 @@
+
 section{
   background-color:  rgba(211, 211, 211, 0.274);
-  min-height: 48rem;
-  color: rgba(79, 109, 124);
+  color: rgb(30, 97, 130);
   flex-direction: column;
   align-items: center;
   padding-top: 2rem;
+  height: 95vh;
+  padding-bottom: 100px;
 }
 .dash_form{
   width: 50%;
   margin-top:2rem ;
 }
 select{
+  position: relative;
+  outline: none;
+  border: none;
+  border-radius: 5px;
   display: block;
   background-color: rgb(233, 233, 233);
-  color: rgba(79, 109, 124);
+  color: rgb(28, 107, 146);
   margin: auto;
   width: 100%;
   font-size: 1.2rem;
   font-weight: 400;
   padding:0.7rem;
+  appearance: none;
 }
+
+form{
+  border: none;
+  position: relative;
+}
+
 .form{
   background-color: white !important;
+}
+.form-icon{
+  position: absolute;
+  font-size: 25px;
+  top: 12px;
+  right: 20px;
+  z-index: 9999;
 }
 @media(max-width:700px){
   .dash_form{
